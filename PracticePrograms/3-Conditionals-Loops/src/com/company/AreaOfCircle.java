@@ -10,8 +10,8 @@ public class AreaOfCircle {
         float radius = in.nextFloat();
 
         System.out.print("Area of circle: ");
-        System.out.print(Math.PI * radius * radius);
-//        16.61902444839708
-//        System.out.print(Math.PI * Math.pow(radius, 2));
+        System.out.print(Math.PI * Math.pow(radius, 2) + " sq. units");
+
+        //test value = 2.3
     }
 }
