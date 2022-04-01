@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class CSort {
     public static void main(String[] args){
-        int[] arr = {5,4,3,2,1};
+        int[] arr = {4,3,2,7,8,2,3,1};
 
         int index = 0;
 
