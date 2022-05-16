@@ -12,13 +12,12 @@ public class CheckIfPrime {
 
     }
     public static boolean prime(int a){
-        boolean bool = false;
+        boolean bool = true;
         if(a == 1 || a == 2){
             return true;
         }
         for(int i = 2; i<a; i++){
             if (a % i == 0) {
-                bool = false;
                 break;
             }
         }
