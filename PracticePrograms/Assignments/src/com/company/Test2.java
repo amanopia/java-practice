@@ -23,6 +23,12 @@ public class Test2 {
         }
 
         // output
-        
+        for(int row = 0; row<arr.length; row++){
+            System.out.print(Arrays.toString(arr[row]));
+            System.out.print("\n");
+        }
+        for(int[] row: arr){
+            System.out.print(Arrays.toString(row));
+        }
     }
 }
