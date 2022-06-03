@@ -8,6 +8,8 @@ public class MaximumIn2DArrays {
             {7,8,9,1414}
         };
         System.out.println(maxIn2d(arr));
+        int a = 0x100;
+        System.out.println(a);
     }
     static int maxIn2d(int[][] arr){
         // base case
@@ -15,12 +17,12 @@ public class MaximumIn2DArrays {
             return -1;
         }
         // maximum variable
-        int max = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
         // max search
-        for(int row = 0; row<arr.length;row++){
-            for(int column = 0; column<arr[row].length; column++){
-                if(arr[row][column] > max){
-                    max = arr[row][column];
+        for(int[] row: arr){
+            for(int column : row){
+                if(column > max){
+                    max = column;
                 }
             }
         }
